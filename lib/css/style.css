@@ -1,0 +1,75 @@
+html, body {
+    background-color: rgb(255, 255, 255)
+}
+
+.navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=f3e5f5');
+    border: none;
+}
+
+.navbar {
+    background: black;
+}
+
+.navbar-brand {
+    color: gainsboro;
+}
+
+#navbar-logo {
+    color: gainsboro;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.nav-link {
+    color: rgba(219, 219, 219, 0.945) !important;
+    padding-left: 5px !important;
+}
+
+button {
+    outline: none !important;
+}
+
+.container {
+    margin-top: 10px !important;
+}
+
+
+.col-md {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #e2dede;
+    margin-top: 5px;
+}
+
+footer {
+    background: black;
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons {
+    margin-left: 50% !important;
+}
+
+@media (max-width: 600px) {
+
+    .row {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .col-md {
+        display: flex;
+        justify-content: center;
+    }
+}
