@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -50,8 +50,8 @@
             </nav>
             <!--/.Navbar-->
             <!--Overview-->
-            <div class="container">
-                <div class="row overview-row">
+            <div class="container overview-row-width">
+                <div class="row overview-row  featured-game-style">
                      <h3>Overview</h3>
                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo elit, 
                          aliquet non quam quis, aliquam aliquet purus. Pellentesque blandit nisl orci, id vulputate justo ultricies ut. 
@@ -69,26 +69,28 @@
                     <div class="row game-row">
                        <div ng-href="#" class="col-md game-1">
                         <h5 class="featured-game-headings">Game #1</h5>
+                        <a href="#" target="blank" class="game-link"></a>
                       </div>
                       <div ng-href="#" class="col-md game-2">
                         <h5 class="featured-game-headings">Game #2</h5>
+                        <a href="#" target="blank" class="game-link"></a>
+
                       </div>
                       <div ng-href="#" class="col-md game-3">
                         <h5 class="featured-game-headings">Game #3</h5>
+                        <a href="#" target="blank" class="game-link"></a>
+
                       </div>
                     </div>
                   </div>
                   <!--Featured Games End-->
                   <!--Bottom Footer-->
-                  <div class="footer navbar-fixed-bottom">
-                    <footer>
-                        <div class="social_icons">
-                           <a href="#"><i class="fab fa-twitter social_icons"></i></a>
-                           <a href="#"><i class="fab fa-linkedin-in social_icons"></i></a>
-                           <a href=""><i class="fab fa-instagram social_icons"></i></a>
-                        </div>
-                    </footer>
-                  </div> 
+                  <nav class="navbar bg-dark bottom-navbar"> 
+                         <a href="https://www.twitter.com" target="blank" class="social_icons"><i class="fab fa-twitter social_icons"></i></a>
+                         <a href="https://linkedin.com" target="blank" class="social_icons"><i class="fab fa-linkedin-in social_icons"></i></a>
+                         <a href="https://www.instagram.com" target="blank" class="social_icons"><i class="fab fa-instagram social_icons"></i></a>
+                 </nav>
+                
 
 </body>
 </html>

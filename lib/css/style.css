@@ -42,10 +42,19 @@ button {
     height: 330px;
     display: flex;
     justify-content: center;
+    color: #c5c2c2;
     }
+
+
 
 .container-fluid .above-footer {
     margin-top: 10px !important;
+}
+
+.above-footer {
+    background-color: #acabab10 !important;
+    padding-bottom: 20px;
+    padding-top: 5px;
 }
 
 .game-links-size {
@@ -76,7 +85,16 @@ button {
     background-image: url(https://images.unsplash.com/photo-1526239187794-f8c27c7872ee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eae6e1a44f61343a999761d765891b84&w=1000&q=80);
     background-size: cover;
 }
+.game-link {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
 
+.game-link:hover {
+    opacity: 0.5;
+    background-color: white;
+}
 .game-2 {
     background-image: url(https://images.unsplash.com/photo-1526239187794-f8c27c7872ee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eae6e1a44f61343a999761d765891b84&w=1000&q=80);
     background-size: cover;
@@ -87,29 +105,35 @@ button {
     background-size: cover;
 }
 
-footer {
-    background: black;
-    position: fixed;
-    height: 40px;
-    bottom: 0;
-    width: 100%;
+.bg-dark {
+    background-color: black !important;
 }
-
-
+.navbar-brand {
+    color: white !important;
+}
 
 .featured-game-headings {
     padding-top: 5px;
     color: rgba(255, 255, 255, 0.884)
 }
 
+.bottom-page-links {
+    background-color: black;
+    width: 100%;
+}
+
 .social_icons {
-    margin-top: 5px;
-    outline: none;
-    color: white !important;
-    display: flex;
-    justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
+   color: white !important;
+   margin-right: 20px;
+   margin-left: 20px;
+}
+
+.bottom-navbar {
+    position: absolute;
+    height: 40px !important;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
 }
 
 @media (max-width: 600px) {
@@ -122,9 +146,14 @@ footer {
         padding-right: 10px;
         }
 
+        .game-link:hover {
+            opacity: 0;
+        }
+
     .above-footer {
-        margin-bottom: 40px !important;
+        margin-bottom: 5px !important;
         margin-top: 165px;
+        padding-bottom: 20px;
     }
 
     .row  {
@@ -137,13 +166,17 @@ footer {
     .col-md {
         display: flex;
         justify-content: center;
-    }
-
-    footer {
-        height: 35px !important;
+        margin-top: 12px;
     }
     
     .social_icons {
-        margin-top: 5px;
+        margin-top: 0;
+    }
+    .bottom-navbar {
+        position: relative;
+        height: 25px !important;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
     }
 }
