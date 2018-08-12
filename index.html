@@ -6,11 +6,11 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="lib/css/style.css">
 </head>
@@ -18,7 +18,7 @@
         <nav class="navbar navbar-light navbar-1 white">
 
                 <!-- Navbar brand -->
-                <a id="navbar-logo" class="navbar-brand" href="#">LOGO</a>
+                <a id="navbar-logo" class="navbar-brand" href="index.html">LOGO</a>
             
                 <!-- Collapse button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavigation" aria-controls="myNavigation"
@@ -49,31 +49,46 @@
             
             </nav>
             <!--/.Navbar-->
-            <!--Featured Games-->
+            <!--Overview-->
             <div class="container">
-                    <div class="row">
-                      <div class="col-md">
-                        One of three columns
+                <div class="row overview-row">
+                     <h3>Overview</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo elit, 
+                         aliquet non quam quis, aliquam aliquet purus. Pellentesque blandit nisl orci, id vulputate justo ultricies ut. 
+                         Aliquam erat volutpat. Nullam et cursus lectus. Mauris id vulputate leo, vitae bibendum mi. 
+                         Nunc blandit accumsan augue a sodales. Vestibulum ac ullamcorper sem, at laoreet turpis. 
+                         Duis mauris lectus, facilisis eget massa in, vehicula feugiat nibh. Sed ullamcorper, metus at volutpat aliquet, 
+                         elit ante tincidunt nunc, at volutpat odio orci ut purus. Donec non tincidunt elit, non ornare enim. 
+                         Maecenas auctor nisi ac odio pulvinar, et pulvinar ligula dignissim. Pellentesque nec augue a arcu consequat luctus. 
+                         Sed eu nisi libero. Nunc blandit accumsan augue a sodales. Vestibulum ac ullamcorper sem, at laoreet turpis.</p>
+                </div>
+            </div>
+            <!--Overview End-->
+            <!--Featured Games-->
+            <div class="container-fluid above-footer">
+                    <div class="row game-row">
+                       <div ng-href="#" class="col-md game-1">
+                        <h5 class="featured-game-headings">Game #1</h5>
                       </div>
-                      <div class="col-md">
-                        One of three columns
+                      <div ng-href="#" class="col-md game-2">
+                        <h5 class="featured-game-headings">Game #2</h5>
                       </div>
-                      <div class="col-md">
-                        One of three columns
+                      <div ng-href="#" class="col-md game-3">
+                        <h5 class="featured-game-headings">Game #3</h5>
                       </div>
                     </div>
                   </div>
                   <!--Featured Games End-->
                   <!--Bottom Footer-->
                   <div class="footer navbar-fixed-bottom">
-                    <footer class="fixed-bottom">
+                    <footer>
                         <div class="social_icons">
-                           <a href="#"><i class="fab fa-twitter"></i></a>
-                           <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                           <a href=""></a>
+                           <a href="#"><i class="fab fa-twitter social_icons"></i></a>
+                           <a href="#"><i class="fab fa-linkedin-in social_icons"></i></a>
+                           <a href=""><i class="fab fa-instagram social_icons"></i></a>
                         </div>
                     </footer>
-                  </div>
+                  </div> 
 
 </body>
 </html>
