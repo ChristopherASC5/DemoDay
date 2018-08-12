@@ -8,7 +8,8 @@ body::-webkit-scrollbar {
 }
 
 .navbar.navbar-1 .navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger5.svg?color=f3e5f5');
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
+    filter: brightness(100) sepia(1) hue-rotate(0deg) saturate(0) !important;
     border: none;
 }
 
@@ -47,11 +48,11 @@ button {
 
 
 
-.container-fluid .above-footer {
+.container-fluid .under-overview{
     margin-top: 10px !important;
 }
 
-.above-footer {
+.under-overview {
     background-color: #acabab10 !important;
     padding-bottom: 20px;
     padding-top: 5px;
@@ -123,10 +124,11 @@ button {
 }
 
 .social_icons {
-   color: white !important;
-   margin-right: 20px;
-   margin-left: 20px;
-}
+    color: white !important;
+    display: flex;
+    justify-content : space-around;
+    padding-top: 5px;
+ }
 
 .bottom-navbar {
     position: relative;
@@ -136,7 +138,17 @@ button {
     width: 100vw;
 }
 
-@media (max-width: 600px) {
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 60px;
+    background-color: #000000ef;
+}
+
+
+@media (max-width: 800px) {
 
     .overview-row {
         display: flex;
@@ -150,8 +162,8 @@ button {
             opacity: 0;
         }
 
-    .above-footer {
-        margin-bottom: 5px !important;
+    .under-overview {
+        margin-bottom: 30px !important;
         margin-top: 165px;
         padding-bottom: 20px;
     }
@@ -172,6 +184,7 @@ button {
     .social_icons {
         margin-top: 0;
     }
+
     .bottom-navbar {
         position: relative;
         height: 25px !important;
