@@ -130,13 +130,6 @@ button {
     padding-top: 5px;
  }
 
-.bottom-navbar {
-    position: relative;
-    height: 40px !important;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-}
 
 .footer {
     position: fixed;
