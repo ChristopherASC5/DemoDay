@@ -129,7 +129,7 @@ button {
 }
 
 .bottom-navbar {
-    position: absolute;
+    position: relative;
     height: 40px !important;
     bottom: 0;
     left: 0;
