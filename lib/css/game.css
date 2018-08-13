@@ -1,0 +1,133 @@
+html, body {
+    background-color: rgb(255, 255, 255);
+    
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+.navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
+    filter: brightness(100) sepia(1) hue-rotate(0deg) saturate(0) !important;
+    border: none;
+}
+
+.navbar {
+    background: black;
+}
+
+.navbar-brand {
+    color: gainsboro;
+}
+
+#navbar-logo {
+    color: gainsboro;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.nav-link {
+    color: rgba(219, 219, 219, 0.945) !important;
+    padding-left: 5px !important;
+}
+
+button {
+    outline: none !important;
+}
+
+.active-link {
+    color: #717274a6 !important;
+}
+
+.game-heading {
+    display: flex;
+    justify-content: center;
+    color: #717274;
+}
+
+.social_icons {
+    color: white !important;
+    display: flex;
+    justify-content : space-around;
+    padding-top: 5px;
+ }
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #000000ef;
+}
+
+.col-sm {
+    height: 200px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.game-row {
+    margin-top: 50px;
+    width: 500px;
+    margin-bottom: 50px;
+}
+.game-row:hover {
+    border: 1px solid black;
+}
+
+h4 {
+    color: #000000;
+    text-align: center;
+}
+
+.game-link {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.game-link-size {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.game-link:hover {
+    opacity: 0.7;
+}
+
+.game-1 {
+    background-image: url(https://i.imgur.com/9M5VDS0.jpg);
+    background-size: cover;
+}
+
+.game-2 {
+    background-image: url(https://vignette.wikia.nocookie.net/mcleodgaming/images/3/3f/SSF2_third_logo.png/revision/latest/scale-to-width-down/250?cb=20150213094041);
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: .8px solid black;
+}
+
+.game {
+    background-image: url('http://games.vodacom.co.za/assets/rich/placeholder_games_cover-551d6a15d95c933821c8e74bccb1d422.png');
+    background-size: cover;
+}
+
+@media (max-width: 800px) {
+    
+    .social_icons {
+        margin-top: 0;
+    }
+
+}

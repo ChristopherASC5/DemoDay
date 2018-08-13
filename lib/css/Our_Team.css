@@ -39,6 +39,10 @@ button {
     outline: none !important;
 }
 
+.active-link {
+    color: #717274a6 !important;
+}
+
 .overview-row {
     padding-top: 20px;
     height: 330px;

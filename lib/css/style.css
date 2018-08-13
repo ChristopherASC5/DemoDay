@@ -82,8 +82,8 @@ button {
   
 }
 
-.game-1 {
-    background-image: url(https://images.unsplash.com/photo-1526239187794-f8c27c7872ee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eae6e1a44f61343a999761d765891b84&w=1000&q=80);
+.game-1 { 
+    background-image: url(https://i.imgur.com/9M5VDS0.jpg);
     background-size: cover;
 }
 .game-link {
@@ -97,8 +97,9 @@ button {
     background-color: white;
 }
 .game-2 {
-    background-image: url(https://images.unsplash.com/photo-1526239187794-f8c27c7872ee?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eae6e1a44f61343a999761d765891b84&w=1000&q=80);
+    background-image: url(https://vignette.wikia.nocookie.net/mcleodgaming/images/3/3f/SSF2_third_logo.png/revision/latest/scale-to-width-down/250?cb=20150213094041);
     background-size: cover;
+    background-position-x: -25px;
 }
 
 .game-3 {
@@ -115,7 +116,7 @@ button {
 
 .featured-game-headings {
     padding-top: 5px;
-    color: rgba(255, 255, 255, 0.884)
+    color: rgba(32, 31, 31, 0.884)
 }
 
 .bottom-page-links {
@@ -138,6 +139,10 @@ button {
     height: 40px;
     line-height: 60px;
     background-color: #000000ef;
+}
+
+.active-link {
+    color: #717274a6 !important;
 }
 
 

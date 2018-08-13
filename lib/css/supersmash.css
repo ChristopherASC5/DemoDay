@@ -1,0 +1,103 @@
+html, body {
+    background-color: rgba(219, 219, 219, 0.945) !important;
+    overflow: hidden;
+    
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+.navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger3.svg?color=00FBD8');
+    filter: brightness(100) sepia(1) hue-rotate(0deg) saturate(0) !important;
+    border: none;
+}
+
+.navbar {
+    background: black;
+}
+
+.navbar-brand {
+    color: gainsboro;
+}
+
+#navbar-logo {
+    color: gainsboro;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.nav-link {
+    color: rgba(219, 219, 219, 0.945) !important;
+    padding-left: 5px !important;
+}
+
+button {
+    outline: none !important;
+}
+
+.bg-dark {
+    background-color: black !important;
+}
+.navbar-brand {
+    color: white !important;
+}
+
+.bottom-page-links {
+    background-color: black;
+    width: 100%;
+}
+
+.social_icons {
+    color: white !important;
+    display: flex;
+    justify-content : space-around;
+    padding-top: 5px;
+ }
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #000000ef;
+}
+
+.active-link {
+    color: #717274a6 !important;
+}
+
+.container-fluid {
+    margin-top: 130px !important;
+}
+
+
+iframe {
+    height: 95vh;
+    width:  98.5vw;
+    background: #e0dbdb;
+}
+
+
+.social_icons {
+    color: white !important;
+    display: flex;
+    justify-content : space-around;
+    padding-top: 5px;
+ }
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 35px;
+    background-color: #000000ef;
+}
+
