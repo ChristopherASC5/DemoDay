@@ -1,13 +1,15 @@
-html, body{
-    background-color: silver;
-    background-image: url("http://i.imgur.com/k9RynUE.png");
-    background-size: cover;
+body{
+    background-color: rgb(163, 161, 161);
     }
+html {
+    background-color: rgb(163, 161, 161);
 
+}
 
 #game {
     display: flex;
     justify-content: center;
+    background-color: rgb(163, 161, 161);
 }
 
 h1{
@@ -20,10 +22,6 @@ h1{
 
 }
 
-html, body {
-    background-color: rgb(255, 255, 255);
-    
-}
 
 body::-webkit-scrollbar { 
     display: none; 
