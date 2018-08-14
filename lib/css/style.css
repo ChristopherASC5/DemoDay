@@ -145,8 +145,7 @@ button {
     color: #717274a6 !important;
 }
 
-
-@media (max-width: 800px) {
+@media (min-width: 300px) and (max-width: 767px) {
 
     .overview-row {
         display: flex;
@@ -162,7 +161,7 @@ button {
 
     .under-overview {
         margin-bottom: 30px !important;
-        margin-top: 165px;
+        margin-top: 10px;
         padding-bottom: 20px;
     }
 

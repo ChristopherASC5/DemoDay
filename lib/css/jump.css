@@ -92,3 +92,9 @@ button {
 .active-link {
     color: #717274a6 !important;
 }
+
+@media (min-width: 300px) and (max-width: 767px){
+    body {
+        overflow: hidden;
+    }
+}

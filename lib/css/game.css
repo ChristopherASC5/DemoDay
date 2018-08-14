@@ -124,10 +124,14 @@ h4 {
     background-size: cover;
 }
 
-@media (max-width: 800px) {
     
-    .social_icons {
-        margin-top: 0;
-    }
+.container-fluid {
+    overflow-y: scroll;
+}
+
+
+@media (min-width: 300px) and (max-width: 767px) {
+    
+    
 
 }
