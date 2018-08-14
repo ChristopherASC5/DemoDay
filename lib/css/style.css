@@ -43,7 +43,7 @@ button {
     height: 330px;
     display: flex;
     justify-content: center;
-    color: #c5c2c2;
+    color: #000000d8;
     }
 
 
@@ -116,7 +116,7 @@ button {
 
 .featured-game-headings {
     padding-top: 5px;
-    color: rgba(32, 31, 31, 0.884)
+    color: rgba(59, 59, 59, 0.884)
 }
 
 .bottom-page-links {
