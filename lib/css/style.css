@@ -39,23 +39,46 @@ button {
 }
 
 .overview-row {
-    padding-top: 20px;
-    height: 330px;
+    width: 100%;
     display: flex;
     justify-content: center;
     color: #000000d8;
     }
 
+    .center-text {
+        text-align: center;
+    }
+
+    .text-padding {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
 
 
-.container-fluid .under-overview{
-    margin-top: 10px !important;
-}
+    .overview-row-container {
+        background-color: #f5eded54 !important;
+        margin-bottom: 10px !important;
+        margin-top: 10px;
+        height: 200px;
+        margin: none !important;
+    }
+
+    .game-row {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
 .under-overview {
-    background-color: #acabab10 !important;
+    /* width: 100% !important; */
+    background-color: #f5ededa9 !important;
+    /* padding-bottom: 20px; */
     padding-bottom: 20px;
     padding-top: 5px;
+
+}
+
+.game-row {
+    width: 100%;
 }
 
 .game-links-size {
@@ -64,7 +87,7 @@ button {
     height: 350px;
     width: 300px;
     margin-left: 10px;
-    margin-right: 12px;
+    margin-right: 10px;
     background: #e2dede;
     margin-top: 5px;
 }
@@ -77,8 +100,10 @@ button {
     width: 300px;
     margin-left: 10px;
     margin-right: 12px;
-    background: #e2dede;
+    background-color: #f0efefa9 !important;
     margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   
 }
 
@@ -145,6 +170,14 @@ button {
     color: #717274a6 !important;
 }
 
+.petition-row {
+    background-color: #f5ededa9 !important;
+}
+
+.petition-margin {
+    margin-top: 0;
+}
+
 @media (min-width: 300px) and (max-width: 767px) {
 
     .overview-row {
@@ -155,12 +188,21 @@ button {
         padding-right: 10px;
         }
 
+        .overview-row-container {
+            height: 30%;
+        }
+
+        .text-padding {
+            padding-left: none;
+            padding-right: none;
+        }
+
         .game-link:hover {
             opacity: 0;
         }
 
     .under-overview {
-        margin-bottom: 30px !important;
+        margin-bottom: 10px !important;
         margin-top: 10px;
         padding-bottom: 20px;
     }

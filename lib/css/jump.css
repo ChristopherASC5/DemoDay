@@ -3,13 +3,17 @@ html, body {
 }
 
 #game {
-    display: flex;
-    justify-content: center;
+    
     background: gray;
    padding-top: 1.5px;
     padding-bottom: 0px;
 }
 #game-border {
+    display: flex;
+    justify-content: center;
+}
+
+#game-border2 {
     border: 5px solid rgba(139, 219, 219, 0.637);
 }
 h1{
@@ -87,6 +91,25 @@ button {
 
 .active-link {
     color: #717274a6 !important;
+}
+
+.ad-left {
+    float: left;
+    width: 100px;
+    height: 100vh;
+    background: white;
+    display: flex;
+justify-content: left;;
+}
+
+.ad-right {
+    float: right; 
+    width: 100px;
+    height: 100vh;
+    background: white;
+    display: flex;
+  justify-content: right;
+  margin-left: 300px;
 }
 
 @media (min-width: 300px) and (max-width: 767px){
