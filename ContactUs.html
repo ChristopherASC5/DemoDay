@@ -3,15 +3,15 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Donate</title>
+    <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="lib/css/donate.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="lib/css/ContactUs.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="lib/css/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/usmcol-sm/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="lib/js/donate.js"></script>
 </head>
 <body>
         <nav class="navbar navbar-light navbar-1 white">
@@ -38,10 +38,10 @@
                             <a class="nav-link" href="Our_Team.html">Our Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="ContactUs.html">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                                <a class="nav-link active-link" href="#">Donate</a>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact Us</a>
+                                    </li>
+                                <a class="nav-link active-link" href="donate.html">Donate</a>
                             </li>
                     </ul>
                     <!-- Links -->
@@ -51,50 +51,17 @@
             
             </nav>
             <!--/.Navbar-->
-            <div class="card-form">
-                <form class="deposit">
-                  <div class="form-indicator"></div>
-                  <div class="form-body">
-                    <div class="row">
-                      <h1 style="margin-bottom:0px;">DONATION</h2>
-                    </div> 
-                    <div class="row" >
-                      <p style="margin-top:0px;" id ="donation"></p>
-                    </div>
-                    <div class="row">
-                      <div class="form-block">
-                        <div class="button" id="1" onclick="setValue(this)">$5</div>
-                        <div class="button" id="2" onclick="setValue(this)">$10</div>
-                        <div class="button" id="3" onclick="setValue(this)">$20</div>
-                        <div class="button" id="4" onclick="setValue(this)">$40</div>
-                        <div class="button" id="5" onclick="setValue(this)">$100</div>
-                        <div class="button" id="6" onclick="setValue(this)">$250</div>
-                        <div class="button" id="7" onclick="setValue(this)">$500</div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <input type="text" id="cc" maxlength="16" placeholder="Credit card number">
-                    </div>
-                    <div class="row">
-                      <input type="text" id="name" placeholder="Name on card">
-                      <input type="text" id ="date" maxlength="5" placeholder="MM/YY">
-                      <input type="text" id ="cvc" maxlength="4" placeholder="CVC">
-                    </div>
-                  </div>
-                  <div class="form-footer">
-                    <div class="btn" onclick="validate(this)">Deposit Funds</button>
-                  </div>
-                </form>
-              </div>
-              </div>
-    <footer class="footer">
-            <div class="container">
-              <span class="text-muted social_icons">
-                    <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter social_icons"></i></a>
-                    <a href="https://linkedin.com" target="blank"><i class="fab fa-linkedin-in social_icons"></i></a>
-                    <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram social_icons"></i></a>        
-                </span>
+            <div class="contact-us-form">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYSYICYvcttG2PYD97PGhghbWv-oGwtQ5hqHDHHXb6JXf3Rw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
             </div>
-          </footer>
+            <footer class="footer">
+                    <div class="container">
+                      <span class="text-muted social_icons">
+                            <a href="https://www.twitter.com" target="blank"><i class="fab fa-twitter social_icons"></i></a>
+                            <a href="https://linkedin.com" target="blank"><i class="fab fa-linkedin-in social_icons"></i></a>
+                            <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram social_icons"></i></a>        
+                        </span>
+                    </div>
+                  </footer>
 </body>
 </html>
