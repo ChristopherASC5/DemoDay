@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="lib/css/game.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="music.css" />
+    <script src="music.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/usmcol-sm/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9448278317871353",
+    enable_page_level_ads: true
+  });
+</script>
 </head>
 <body>
-     <nav class="navbar navbar-light navbar-1 white">
+        <nav class="navbar navbar-light navbar-1 white">
 
                 <!-- Navbar brand -->
                 <a id="navbar-logo" class="navbar-brand" href="index.html">Change Through Games</a>
@@ -31,7 +40,7 @@
                             <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active-link" href="#">Games and Quizzes</a>
+                            <a class="nav-link" href="game.html">Games and Quizzes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Our_Team.html">Our Team</a>
@@ -49,64 +58,15 @@
                 <!-- Collapsible content -->
             
             </nav>
-            <!--/.Navbar-->
-    <div class="game-heading">
-        <h1>Games</h1>
+    <h1>Music</h1>
+    <div class = "quiz-container">
+        <div id = "quiz"></div>
     </div>
-    <div class="container-fluid">
-        <div class="row game-row">
-            <div class="col-sm game-1 game-link">
-                <a href="jump.html" class="game-link-size"></a>
-            </div>
-            <div class="col-sm">
-                    <h4>Jump Game</h4>
-                <p>See how far you can go! You are a ball bouncing up and you are trying to get as high as you can with the best possible score! Use your left and right arrow keys to move the ball!</p> 
-             </div>
-    </div>
-    </div>
-    <div class="container-fluid mobile-spacing">
-            <div class="row game-row">
-                <div class="col-sm game-2 game-link">
-                    <a href="#" class="game-link-size"></a>
-                </div>
-                <div class="col-sm">
-                    <h4>Game TItle</h4>
-                    <p>Description</p>
-                    <br>
-                    <p></p>
-                </div>
-        </div>
-        </div>
-        <div class="game-heading">
-                <h1>Quizzes</h1>
-            </div>
-            <div class="container-fluid">
-                <div class="row game-row">
-                    <div class="col-sm quiz-1 game-link">
-                        <a href="disney.html" class="game-link-size"></a>
-                    </div>
-                    <div class="col-sm">
-                            <h4>Disney</h4>
-                        <p>How well do you think you know Disney? Test your knowledge in this 10 question quiz to find out!</p>
-                        <br>               
-                        <p></p>
-                    </div>
-            </div>
-            </div>
-            <div class="container-fluid mobile-spacing">
-                    <div class="row game-row">
-                        <div class="col-sm quiz-2 game-link">
-                            <a href="music.html" class="game-link-size"></a>
-                        </div>
-                        <div class="col-sm">
-                            <h4>Music</h4>
-                            <p>With questions feauturing artists like Drake, Micheal Jackson, and Beyonce, test your knowlege now!</p>
-                            <br>
-                            <p></p>
-                        </div>
-                </div>
-                </div>
-   
+    <!-- <button id="previous">Previous Question</button> -->
+    <button id="next">Next Question</button>
+    <button id="submit">Submit Quiz</button>
+    <div id="results"></div>
+
     <footer class="footer">
             <div class="container">
               <span class="text-muted social_icons">

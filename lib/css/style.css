@@ -100,7 +100,7 @@ button {
     width: 300px;
     margin-left: 10px;
     margin-right: 12px;
-    background-color: #f0efefa9 !important;
+    background-color: #1b1a1aa9 !important;
     margin-top: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -130,6 +130,7 @@ button {
 .game-3 {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAADgCAMAAAAt85rTAAAAMFBMVEXr6+vIyMjn5+fR0dHMzMzk5OTq6urc3NzJycnPz8/g4ODZ2dnW1tbT09Pe3t7i4uKnKpJ6AAAFk0lEQVR4nO2c67acIAyFZxDxgpf3f9vO3QBxdDRAOWt/v7o6rbghJAGCl0tCVHW9UamUbSYFAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAksHAkvn7wvs7gK7vyvQqPqGMrnfAwBQEkaph++Q5/bg3P7IqLmxo9bXKGg92mbOKFI1Y9fG0bbQdmOTJ3DWo46u7qVRj3Vqdabv0oh70/UpLdXMVVp5d6o5mcR6SC/vzpDIUG0kp7mNtin0jbnk3Rmjy6uzDd8THdlM+8z6bgr7mPqaL/q0KF/aaeLp6/kWh1s+FYG5GXid0cZwDjOXtpqiRiczVUyjc5zG5qA/uxSRqR6CpElHUaj8drRNlASrIPJG2bfy41/KBLgOGpdvo/HmQZN0mWYabyqKu1Ll2Ujy9UvtzRBhIzWujeTYnFbuCmaUtSDXQvJsvrsKW1EjdZ+d3j6fuFYq2suOhwnyXZJ9CNmNMeyT3ExfcAidENhO/s8khQx+O4Lph06PEzNCE50pgsHQyUGH4Gfyo8SK1NiXDTIzwdlLkMtJnQEM+03YbOxniEIzdaJVJ9DYA7Nh+bICyURjnuZ4A6lIQe2CM3xZgdPXIXLcQThbjtFtKJAVaMnjmJ/pEArZaE1cFxsCZQUSBS33NqS7W5mATLMY1ihkBfZLcxX3O5kwQtkMfSLrmWUFmiVrYgeo3+rvEw1eNeu3ZAUuOwd8UDUknakk/Cg1en6dKSzw8jz50GsrTrKwEcmKaQK49Kkaqjd0JaU/f1v9aj61rUb7fGE1T03//KNpxmp0JwZxsyLbwNTml82e7R1u1kOsYmzLmeXLXJ3oOy9t8D7hR2iCu7TjL7DPCvwMi6PwE6E0UUjStTDxPwAfeIUF1p//5mwJLv6N6iaNSCT3NHUgbyQrkPQieWcyVtRISSMSTi2JQBKKhsV5LuPquJM/KbArXGBOExV0Mqrup6mvmRVXTicjFSZMP3a6vaG7MQxfGcOETKA3k/MftH/qljHQi6Rq4YAHaaSTqjW3VO3RBQlSNYlkmzvaXz9sfyXbNlGyLbBc4ksX1hRuLJeU9HLp/IJ3bb7yBpZ8wXt6y8KsFiW23ACk37I4u+lE9gF9OC+fftPp7Lbhl4jJ7ful3zY8ufHLF9e8YOZ0ho3fU1v3xj2Ybd0JybjBDFv3rpH9ePhCLe4W2+rarQlhQsFHA3f44pyfiYi7c+L4zAkRz7jA/JVDhuOz4wegbvHCS74zqEwxQfoD0ONH2I6Wt3W7JSlcvpL6CPtwEcLES3Fl717yRCxCOFZGYlx9SyJr3NxtZ8FizDKSY4VAXvkVGSlX+b53jVsIdKSUy7arb+T1V7tj5yFyKdfvxXieBs81+QuMrfGIX4z3Yzml8ZeAfnCZvBfWX6/uqATllD8VxPbB5YrACK3/L5idqHfLaQpi95c0z2OwAmR6POiDdmQrlZOVNO8sSq8H5tadZnpchev8Vvs9lrQofftawWSZ17muRRXFXmFrKzvlulbw/WLIOlzWfKc+dElPpuBvjSNXe8ZVjxA4xz36ol7tOXI5a/ji/83PNxFjX866/Hq9buv0wI+HG8S/Xnf5bSJuX64IrkR8Iea9LOed9hrW6u47xey+UZrqiuvuS8p25wvVQVbDkfCS8mXXNfN15xmy7U7TXjN/8O1DAW23xzgpxq5/VCHHhwIerHzqQVfDEWsy81AxszHfpx4eL+V+rON+Om0n7gx+H6qe7P2c+91TuT/W8YR+bkUpc/J1jKFPyy4OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4v/gHI3I5Adf71LEAAAAASUVORK5CYII=);
     background-size: cover;
+    background-position-x: -25px;
 }
 
 .bg-dark {
@@ -162,7 +163,7 @@ button {
     bottom: 0;
     width: 100%;
     height: 40px;
-    line-height: 60px;
+    line-height: 20px;
     background-color: #000000ef;
 }
 
@@ -171,13 +172,103 @@ button {
 }
 
 .petition-row {
-    background-color: #f5ededa9 !important;
+    background-color: #fffbfba9 !important;
 }
 
 .petition-margin {
     margin-top: 0;
 }
 
+
+h1{
+     text-align:center
+}
+
+h2{
+     text-align: center;
+     color: grey;
+}
+#harden{
+    display: block;
+   margin: 0 auto;
+    width: 30vw;
+    
+    
+}
+
+
+
+.filterDiv {
+    float: left;
+   color: #ffffff;
+   text-align: center;
+   margin: 2px;
+   display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+   display: block;
+}
+
+/* Style the buttons */
+.btn {
+ border: none;
+ outline: none;
+ padding: 12px 16px;
+ background-color: #f1f1f1;
+ cursor: pointer;
+ display: flex;
+ margin-right: 0;
+
+}
+
+div #myBtnContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+ background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+ background-color: #666;
+ color: white;
+}
+
+.main_container {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    height: 80vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: #f5eded54;
+}
+.petition_container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.change-embed-petition{
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    width: auto;
+    height: 45%;
+    overflow-x: hidden;
+}
+
+.filterDiv .colors {
+    height: 30%;
+}
 @media (min-width: 300px) and (max-width: 767px) {
 
     .overview-row {
@@ -224,11 +315,48 @@ button {
         margin-top: 0;
     }
 
-    .bottom-navbar {
-        position: relative;
-        height: 25px !important;
-        bottom: 0;
-        left: 0;
-        width: 100vw;
-    }
+    .change-embed-petition{
+        display:flex;
+        justify-content: center;
+        width: 92vw
+            }
+            
+            h2 {
+                font-size: 18px;
+            }
+        
+        .btn{
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+        .main_container {
+            width: 95vw;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        
+        div #myBtnContainer {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        
+        .social_icons {
+            color: white !important;
+            display: flex;
+            justify-content : space-around;
+            padding-top: 5px;
+            
+        }
+        
+        
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            height: 40px;
+            line-height: 30px ;
+            background-color: #000000ef;
+        }
 }

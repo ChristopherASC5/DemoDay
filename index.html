@@ -12,16 +12,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="lib/css/style.css">
     <link rel="stylesheet" href="lib/css/animation.css">
-</head>
-<body>
+    <meta name="google-signin-scope" content="profile email">
+        <meta name="google-signin-client_id" content="787738262791-uh5jf256u9tmite9rjd9itcjcula10c9.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    </head>
+    <body>
         <nav class="navbar navbar-light navbar-1 white">
-
+            
                 <!-- Navbar brand -->
                 <a id="navbar-logo" class="navbar-brand" href="index.html">Change Through Games</a>
-            
+                <!-- <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div> -->
                 <!-- Collapse button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavigation" aria-controls="myNavigation"
-                    aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             
                 <!-- Collapsible content -->
                 <div class="collapse navbar-collapse" id="myNavigation">
@@ -38,29 +41,54 @@
                             <a class="nav-link" href="Our_Team.html">Our Team</a>
                         </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="ContactUs.html">Contact Us</a>
-                            </li>
+                            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                        </li>
                         <li class="nav-item">
                                 <a class="nav-link" href="donate.html">Donate</a>
                             </li>
                     </ul>
                     <!-- Links -->
-                    </div>
+                </div>
                 </div>
                 <!-- Collapsible content -->
-            
+                
             </nav>
             <!--/.Navbar-->
+                <script>
+                  function onSignIn(googleUser) {
+                    // Useful data for your client-side scripts:
+                    var profile = googleUser.getBasicProfile();
+                    console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+                    console.log('Full Name: ' + profile.getName());
+                    console.log('Given Name: ' + profile.getGivenName());
+                    console.log('Family Name: ' + profile.getFamilyName());
+                    console.log("Image URL: " + profile.getImageUrl());
+                    console.log("Email: " + profile.getEmail());
+                
+                    // The ID token you need to pass to your backend:
+                    var id_token = googleUser.getAuthResponse().id_token;
+                    console.log("ID Token: " + id_token);
+                  };
+                </script>
+                <a href="projects.html" onclick="signOut();">Sign out</a>
+                <script>
+                  function signOut() {
+                    var auth2 = gapi.auth2.getAuthInstance();
+                    GoogleAuth.signOut().then(function () {
+                      console.log('User signed out.');
+                    });
+                  }
+                </script>
             <!--Overview-->
             <div class="container-fluid overview-row-container">
                 <div class="row center-text">
                     <div class="col-md2">
-                            <h3>Overview</h3>
+                        <h3>Overview</h3>
                         <p class="text-padding">Our Mission is to help make a change in this world through a fun way.
-                        For every 5 minutes spent playing any game on our website 10 cents will be donated to a charity (it adds up!) 
-                        or for every survey question answered 5 cents will be donated to a charity. So go have fun! Play a game! Also if you would like to donate a game please contact us! The more games the better!
-                       Make sure to share the site with your friends so that we can help make a change in a fun way!</p>
-                    </div>
+                            For every 5 minutes spent playing any game on our website 10 cents will be donated to a charity (it adds up!) 
+                            or for every survey question answered 5 cents will be donated to a charity. So go have fun! Play a game! Also if you would like to donate a game please contact us! The more games the better!
+                            Make sure to share the site with your friends so that we can help make a change in a fun way!</p>
+                        </div>
                 </div>
             </div>
             <!--Overview End-->
@@ -68,38 +96,46 @@
             <div class="container-fluid above-sticky-footer under-overview">
                 <center><h4>Featured Games</h4></center>
                 <div class="row game-row">
-                            <div ng-href="#" class="col-md game-1">
+                    <div ng-href="#" class="col-md game-1">
                              <h5 class="featured-game-headings">Jump Game</h5>
                              <a href="jump.html" target="blank" class="game-link"></a>
                            </div>
                            <div ng-href="#" class="col-md game-2">
                              <h5 class="featured-game-headings">Game #2</h5>
-                             <a href="#" target="blank" class="game-link"></a>
-     
-                           </div>
+                             <a href="https://www.mcleodgaming.com/games/ssf2" target="blank" class="game-link"></a>
+                             
+                            </div>
                            <div ng-href="#" class="col-md game-3">
                              <h5 class="featured-game-headings">Game #3</h5>
                              <a href="#" target="blank" class="game-link"></a>
 
+                            </div>
                         </div>
                     </div>
-                  </div>
-                  <!--Featured Games End-->
+                    <!--Featured Games End-->
+                    
+                  <!-- Control buttons -->
+                  <div class="main_container above-footer above-sticky-footer">
+                        <h1>Petitions</h1>
+         <h2>This months focus is...</h2>
+<div id="myBtnContainer">
+    <button class="btn" onclick="filterSelection('colors')"> Disaster Relief Petitions</button>
+</div>
 
-                  <div class="container-fluid above-sticky-footer under-featured petition-margin">
-                        <div class="row petition-row">
-                            <div ng-href="#" class="col-md">
-                                    <h4>Petition</h4>
-                            <a href="#" target="blank"></a>
-                          </div>
-                        </div>
-                      </div>
-                  <!--Bottom Footer-->
-                  <!--<nav class="navbar bg-dark bottom-navbar"> 
-                         <a href="https://www.twitter.com" target="blank" class="social_icons"><i class="fab fa-twitter social_icons"></i></a>
-                         <a href="https://linkedin.com" target="blank" class="social_icons"><i class="fab fa-linkedin-in social_icons"></i></a>
-                         <a href="https://www.instagram.com" target="blank" class="social_icons"><i class="fab fa-instagram social_icons"></i></a>
-                 </nav>-->
+<div class="petition_container above-sticky-footer above-footer">
+    <script src="lib/js/Petitions.js" defer></script>
+    <div class="filterDiv colors"><div class="change-embed-petition" data-petition-id="12362338"></div>
+    <script src="https://static.change.org/product/embeds/v1/change-embeds.js" type="text/javascript"></script></div>
+    <div class="filterDiv colors"><div class="change-embed-petition" data-petition-id="12109801"></div>
+    <script src="https://static.change.org/product/embeds/v1/change-embeds.js" type="text/javascript"></script> </div>
+    <div class="filterDiv colors"><div class="change-embed-petition" data-petition-id="12154867"></div>
+    <script src="https://static.change.org/product/embeds/v1/change-embeds.js" type="text/javascript"></script> </div>
+    <div class="filterDiv colors"><div class="change-embed-petition" data-petition-id="12423406"></div>
+    <script src="https://static.change.org/product/embeds/v1/change-embeds.js" type="text/javascript"></script></div>
+</div>
+</div>
+        
+<!--Bottom Footer-->
                  <footer class="footer">
                         <div class="container">
                           <span class="text-muted social_icons">
